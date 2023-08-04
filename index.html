@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="moda" />
+    <meta name="description" content="moda cursos diseño" />
+    <meta name="keywords" content="Diseño, moda, tendencia, modelaje" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Distraction</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Barra Navegacion-->
+    <header>
+      <div class="d-flex flex-column align-items-center">
+        <h1 class="titulo-principal text-center mt-3">DISTRACTION</h1>
+      </div>
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-content">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-toggler"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <ul
+              class="navbar-nav w-100 justify-content-around align-items-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sobre-mi"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">NOTICIAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonios">REGISTRO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">INICIAR SESION</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Hero-->
+    <section class="section-hero">
+      <div
+        id="carouselExampleCaptions"
+        class="slider carousel carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero">
+              <img
+                src="assets/img/tienda5.jpg"
+                class="d-block w-100 h-300"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-caption d-md-block">
+              <h3>Potencia tu Tienda en Línea</h3>
+              <p>
+                Descubre cómo destacar en el mundo digital con un diseño único,
+                elegante y adaptado a tu estilo. Nuestro equipo te presentará
+                las últimas tendencias en diseño y te brindará ideas innovadoras
+                para cautivar a tus clientes y potenciar tus ventas.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero">
+              <img
+                src="assets/img/tienda4.jpg"
+                class="d-block w-100 h-300"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-caption d-md-block">
+              <h3>Ideas para Desarrollar el Proyecto Perfecto</h3>
+              <p>
+                En el apasionante universo de la moda, sobresalir y destacar es
+                clave para alcanzar el éxito en un mercado en constante cambio.
+                Con la diversidad de opciones disponibles para los amantes del
+                estilo, es fundamental idear estrategias creativas que impulsen
+                el potencial de tu tienda y la posicionen como un referente en
+                el mundo de la moda.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero">
+              <img
+                src="assets/img/tienda3.jpg"
+                class="d-block w-100 h-300"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-caption d-md-block">
+              <h3>
+                Estilo en la Red: Potencia tu Tienda de Ropa con Ideas y
+                Desarrollo Web
+              </h3>
+              <p>
+                En el dinámico mundo del comercio de moda, tener una presencia
+                en línea sólida y atractiva es fundamental para destacar entre
+                la multitud y alcanzar un éxito sostenible. Si eres dueño de una
+                tienda de ropa, te encuentras en un desafío donde la fusión de
+                la creatividad y el desarrollo web se convierte en la clave para
+                atraer a los clientes y marcar tendencia. Sumérgete en un
+                universo de ideas innovadoras y soluciones de desarrollo web que
+                elevarán tu tienda de ropa a nuevas alturas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--Ideas Circulos-->
+    <section class="circle container">
+      <div class="row justify-content-center div-circle d-fle">
+
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2 ">
+          <div class="circle-ideas justify-content-center">
+            <img class="circle-img" src="assets/img/circulo-1.jpg" alt="Mostrando como planificar" />
+            <div class="overlay clickable-div" data-target="cardContainer">
+              <p>Planificación</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="circle-ideas justify-content-center">
+            <img class="circle-img" src="assets/img/circulo1.jpg" alt="Imagen relacionada a realizar estrategias" />
+            <div class="overlay clickable-div" data-target="cardContainer2">
+              <p>Estrategia</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="circle-ideas justify-content-center">
+            <img class="circle-img" src="assets/img/circulo3.jpg" alt="Imagen relacionada con la implementacion" />
+            <div class="overlay clickable-div" data-target="cardContainer3">
+              <p>Implementación</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-tools"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="circle-ideas justify-content-center">
+            <img class="circle-img" src="assets/img/circulo4.jpg" alt="Imagen relacionada a la edicion" />
+            <div class="overlay clickable-div" data-target="cardContainer4">
+              <p>Edición</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="circle-ideas justify-content-center">
+            <img class="circle-img" src="assets/img/circulo5.jpg" alt="Imagen relacionada a la proyeccion" />
+            <div class="overlay clickable-div" data-target="cardContainer5">
+              <p>Proyección</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+          <div class="circle-ideas justify-content-center">
+            <img class="circle-img" src="assets/img/accesorios1.jpg" alt="Imagen relacionada con el lanzamiento" />
+            <div class="overlay clickable-div" data-target="cardContainer6">
+              <p>Lanzamiento</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-rocket"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para la card -->
+    <div class="container card-container d-none" id="cardContainer">
+      <div class="card card-investigacion">
+        <img src="assets/img/circulo-1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Investigación y Planificación:</h3>
+          <p class="card-text">
+            Desarrollamos una estrategia de marketing digital para promocionar tú
+            tienda en línea. Utilizamos técnicas de SEO (Optimización para Motores
+            de Búsqueda) para mejorar el posicionamiento en los resultados de
+            búsqueda. Creamos campañas de marketing en redes sociales y publicidad
+            pagada para atraer tráfico y clientes potenciales.
+          </p>
+          <a href="#" class="btn btn-secondary" onclick="closeCard()"
+            >Volver <i class="bi bi-arrow-right-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container card-container d-none" id="cardContainer2">
+      <div class="card card-investigacion">
+        <img src="assets/img/circulo1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Estrategia:</h3>
+          <p class="card-text">
+            Transformar una tienda de ropa tradicional en una experiencia digital exitosa requiere una estrategia de desarrollo web bien planificada. La clave está en un diseño web moderno y responsive que ofrezca una navegación intuitiva. Un catálogo completo y descripciones detalladas, junto con métodos de pago seguros, garantizan una experiencia de compra confiable. Con análisis web continuo, las tiendas online lograrán maximizar sus conversiones y florecer en el mundo digital.
+          </p>
+          <a href="#" class="btn btn-secondary" onclick="closeCard()"
+            >Volver <i class="bi bi-arrow-right-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container card-container d-none" id="cardContainer3">
+      <div class="card card-investigacion">
+        <img src="assets/img/circulo3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Investigación y Planificación:</h3>
+          <p class="card-text">
+            Desarrollar una estrategia de marketing digital para promocionar la
+            tienda en línea. Utilizar técnicas de SEO (Optimización para Motores
+            de Búsqueda) para mejorar el posicionamiento en los resultados de
+            búsqueda. Crear campañas de marketing en redes sociales y publicidad
+            pagada para atraer tráfico y clientes potenciales.
+          </p>
+          <a href="#" class="btn btn-secondary" onclick="closeCard()"
+            >Volver <i class="bi bi-arrow-right-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container card-container d-none" id="cardContainer4">
+      <div class="card card-investigacion">
+        <img src="assets/img/circulo4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Investigación y Planificación:</h3>
+          <p class="card-text">
+            Desarrollar una estrategia de marketing digital para promocionar la
+            tienda en línea. Utilizar técnicas de SEO (Optimización para Motores
+            de Búsqueda) para mejorar el posicionamiento en los resultados de
+            búsqueda. Crear campañas de marketing en redes sociales y publicidad
+            pagada para atraer tráfico y clientes potenciales.
+          </p>
+          <a href="#" class="btn btn-secondary" onclick="closeCard()"
+            >Volver <i class="bi bi-arrow-right-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container card-container d-none" id="cardContainer5">
+      <div class="card card-investigacion">
+        <img src="assets/img/circulo5.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Investigación y Planificación:</h3>
+          <p class="card-text">
+            Desarrollar una estrategia de marketing digital para promocionar la
+            tienda en línea. Utilizar técnicas de SEO (Optimización para Motores
+            de Búsqueda) para mejorar el posicionamiento en los resultados de
+            búsqueda. Crear campañas de marketing en redes sociales y publicidad
+            pagada para atraer tráfico y clientes potenciales.
+          </p>
+          <a href="#" class="btn btn-secondary" onclick="closeCard()"
+            >Volver <i class="bi bi-arrow-right-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container card-container d-none" id="cardContainer6">
+      <div class="card card-investigacion">
+        <img src="assets/img/circulo6.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Investigación y Planificación:</h3>
+          <p class="card-text">
+            Desarrollar una estrategia de marketing digital para promocionar la
+            tienda en línea. Utilizar técnicas de SEO (Optimización para Motores
+            de Búsqueda) para mejorar el posicionamiento en los resultados de
+            búsqueda. Crear campañas de marketing en redes sociales y publicidad
+            pagada para atraer tráfico y clientes potenciales.
+          </p>
+          <a href="#" class="btn btn-secondary" onclick="closeCard()"
+            >Volver <i class="bi bi-arrow-right-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/card.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
