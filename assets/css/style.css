@@ -1,51 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins&display=swap');
 
-/**Titulo**/
 *{
   box-sizing: border-box;
 }
 body {
-    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
   }
-.titulo-principal{
-    font-size: 3.5rem;
-    font-family: 'Roboto Mono', monospace;
-    margin: 0 450px;
-    border-bottom: 1px solid #454546;
-    color:  #454546;
+p{
+  font-family: 'Lato', sans-serif;
 }
-.navbar{
-    margin-top: 80px ;
-    font-size: 1.3rem;
-    color: #454546;
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Oswald', sans-serif;
 }
-.navbar .container-fluid {
+
+/**Header**/
+.header{
   position: relative;
 }
-.navbar a:hover{
-    font-size: 1.6rem;
-    font-weight: bold;
+.titulo-principal{
+  
+  color: #454546; 
+  border-bottom: solid 1px #454546;
 }
-/* Estilos para el menú transparente */
-.navbar-transparent {
-    background-color: transparent !important;
-    transition: background-color 0.3s ease-in-out;
+.titulo-principal h1{
+  font-size: 4rem;
+}
+.navbar {
+  color: #454546;
+}
+.nav-link{
+font-size: 20px;
+}
+.nav-item a:hover{
+  border-bottom: 1px solid #454546;
   }
-  .navbar.navbar-solid {
-    margin-top: 0;
-  }
-  .navbar-solid {
-    background-color: white !important; /* Change this color to the desired background color */
-    transition: background-color 0.2s ease-in;
-  }
-  /* Estilo cuando el .carousel está scrolled */
-  .scrolled .carousel {
-    margin-top: 0px;
-  }
-
 
 /**Hero**/
 .hero {
+    position: absolute;
     position: relative;
   }
 
@@ -60,19 +53,15 @@ body {
     z-index: 1;
   }
 
-.carousel{
-    margin-top: 60px;
-}
-
 .carousel-inner {
-    height: 600px; 
+    height: 570px; 
     transition:all 0.2s ease-in-out;
   }
 
   .carousel-inner .carousel-item img {
     object-fit: cover; 
     width: 100%;
-    height: 600px;
+    height: 570px;
   }
   .carousel-item{
     height: 300px;
@@ -85,13 +74,13 @@ body {
     z-index: 2;
   }
   .carousel-caption p{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 80px;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.2rem;
     color: white;
   }
-
+  
   /**Circle**/
 
   .circle{
@@ -100,29 +89,35 @@ body {
     align-items: center; /* Centrar los círculos verticalmente */
   flex-wrap: wrap;
   }
-  .circle .col-custom {
-    margin: 0 !important;
-  }
+  
  
   .circle-img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    margin: 0;
+    object-fit: cover;
   }
   .circle-ideas{
     position: relative;
     text-align: center;
     justify-content: center;
     overflow: hidden;
-    width: 200px; /* Ancho fijo del contenedor */
-    height: 200px; /* Alto fijo del contenedor */
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin: 0 auto;
     padding: auto;
   }
   .div-circle{
     margin: 30px 0;
+  }
+  .circulos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
   }
   .overlay{
     transition: all 0.2s ease;
@@ -155,8 +150,6 @@ body {
 .circle-ideas:hover .overlay{
     opacity: 1;
 }
- 
-
   /**Card**/
   .clickable-div {
     cursor: pointer;
@@ -186,159 +179,132 @@ body {
     background-color: white;
     border-radius: 0 0 10px 10px; /* Borde redondeado solo en la parte inferior */
   }
- 
 
-  @media screen and (max-width: 30px){
-    .circle-img{
-      width: 120px;
-      height: 120px;
-    
-    }
-    .circle-ideas{
-      width: 120px; 
-      height: 120px; 
-    }
-
+  .card-body .card-title{
+    font-size: 1.2rem;
   }
-  @media screen and (max-width: 400px){
-    .titulo-principal{
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .navbar-content{
-        position: relative;
-        top: 50px;
-        left: 110px;
-        
-    }
-    .navbar-collapse{
-        position: relative;
-        top: -10px;
-        left: -10px;
-        background-color: white;
-        margin-top: 60px;
-        text-align: center;
-        
-    }
-    .navbar a{
-        font-size: 1.2rem;
-    }
-    .section-hero{
-        margin-top: 50px;
-    }
-    .carousel-caption p{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 10px;
-        color: white;
-      }
-      
-  }
+ .card-body .card-text{
+  font-size: 1rem;
+ }
 
-@media screen and (max-width: 570px){
-    .titulo-principal{
-        font-size: 2.5rem;
-        margin: 0 auto;
-        text-align: left; 
-    }
-    .navbar{
-        margin-top: 35px;
-    }
-    .navbar .container-fluid{
-        position: relative;
-        top: -37px;
-        left: -25px;
-        margin: 20px;
-    }
-    .navbar a{
-        font-size: 1.2rem;
-    }
-    .navbar a:hover{
-        font-size: 1.6rem;
-    }
-    .carousel{
-        margin-top: 10px;
-    }
-    .scrolled .carousel {
-        margin-top: 0px;
-    }
-    .card-investigacion{
-        width: 90%; 
-        height: 650px;
-        font-size: 15px;
-    }
-    .card-investigacion img {
-        width: 100%;
-        height: 40%;
-        object-fit: cover;
-        border-radius: 5px 5px 0 0; /* Agregamos un borde redondeado solo en la parte superior */
-    }
-    .card-investigacion .card-body {
-        padding: 10px;
-        background-color: white;
-        border-radius: 0 0 10px 10px; /* Borde redondeado solo en la parte inferior */
-    }
+ /**Figuras **/
+ .contenedor-general{
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-@media (max-width: 775px) {
-    .carousel-caption p {
-      font-size: 15px;
-    }
-    .carousel-caption h3 {
-        font-size: 20px;
-      }
+.container__block-general{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 600px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  position: relative; 
+  perspective: 1000px;
+  z-index: 3;
+}
+.container__block-general img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;;
 
-      .card-estrategia{
-        width: 90%; 
-        height: 650px;
-        font-size: 15px;
-        }
-        .card-investigacion img {
-          width: 100%;
-          height: 40%;
-          object-fit: cover;
-          border-radius: 5px 5px 0 0; /* Agregamos un borde redondeado solo en la parte superior */
-        }
-        .card-investigacion .card-body {
-          padding: 10px;
-          background-color: white;
-          border-radius: 0 0 10px 10px; /* Borde redondeado solo en la parte inferior */
-        }
-        
-      
-  }
+}
 
-  @media screen and (min-width: 776px) and (max-width: 980px){
-    .card-investigacion{
-      width: 80%; 
-      height: 600px;
-      font-size: 18px;
-      }
-      .card-investigacion img {
-        width: 100%;
-        height: 40%;
-        object-fit: cover;
-        border-radius: 5px 5px 0 0; /* Agregamos un borde redondeado solo en la parte superior */
-      }
-      .card-investigacion .card-body {
-        padding: 10px;
-        background-color: white;
-        border-radius: 0 0 10px 10px; /* Borde redondeado solo en la parte inferior */
-      }
-    
-  }
+.container__block-general .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 29, 29, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 5;
+}
+
+.container__block-general .card-back p {
+  transform: rotateY(-180deg); /* Rotación inversa para que el texto no rote */
+  top: 10%; /* Modificamos el valor para centrar verticalmente */
+  left: 10%; /* Modificamos el valor para centrar horizontalmente */
+  width: 80%; /* Nuevo valor para que ocupe el 80% del ancho */
+  height: 80%;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__block-general .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+
+
+.container__block-general:hover .card-back,
+    .container__block-general:hover img{
+  opacity: 1;
+  transform: rotateY(180deg);  
+}
+
+
+
+  @media screen and (max-width: 570px) {
   
-  @media screen and (max-width: 1000px){
-    .circle-img{
-      width: 180px;
-      height: 180px;
-    
+    .titulo-menu-container h1{
+      font-size: 2rem;
+      margin: 0;
     }
-    .circle-ideas{
-      width: 180px; 
-      height: 180px; 
+    .carousel-caption h3{
+      font-size: 17px;
+      color: white;
+      margin-top: 20px;
+    }
+    .carousel-caption p{
+      font-size: 14px;
+      color: white;
+      margin-bottom: 20px;
     }
 
+    .circle-ideas{
+      width: 140px;
+      height: 140px;
+    }
+    .card-investigacion{
+      width: 90%;
+    }
+
+    .card-investigacion img{
+      height: 40%;
+    }
+    .card-body .card-title{
+      font-size: 1rem;
+    }
+   .card-body .card-text, .btn-secondary{
+    font-size: 0.8rem;
+   }
+   .contenedor-general{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
   }
+    
+
+ 
+
 

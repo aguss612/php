@@ -29,3 +29,4 @@ function closeCard(event) {
   const cardContainer = event.target.closest(".card-container");
   cardContainer.classList.add("d-none");
 }
+
